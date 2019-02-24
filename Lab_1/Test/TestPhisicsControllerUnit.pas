@@ -46,7 +46,7 @@ var
 begin
   Menu:=TList<string>.create;
   Menu:=FPhisicsController.getMenu;
-  // CheckEquals (Menu.First,'Test1'); //Ошибка в тесте (должен быть -'Test')
+  // CheckEquals (Menu.First,'Test1'); //In the test Error (should be 'test')
   CheckNotEquals(Menu.First,'Test2');
 
 
