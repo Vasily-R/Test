@@ -16,6 +16,8 @@ function PhisicsController.getMenu:TList<string>;
 begin
   result:=TList<string>.create;
   result.Add('Test');
+  result.Add('Test2');
+  result.Add('Test3');
 end;
 
 end.

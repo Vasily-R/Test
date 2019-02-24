@@ -48,8 +48,7 @@ begin
   Menu:=FPhisicsController.getMenu;
   // CheckEquals (Menu.First,'Test1'); //In the test Error (should be 'test')
   CheckNotEquals(Menu.First,'Test2');
-
-
+  CheckEquals(Menu.Items[2],'Test3'); //Another record type
 
 end;
 
