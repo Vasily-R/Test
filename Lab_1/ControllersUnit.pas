@@ -6,7 +6,7 @@ uses System.Generics.Collections;
 
 type
   Controllers = interface
-    function getMenu:TList<string>;
+    function getMenu: TList<string>;
   end;
 
 implementation
