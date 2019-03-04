@@ -3,7 +3,8 @@ unit Unit1;
 interface
 
 uses
-  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants,
+  System.Classes, Vcl.Graphics,
   Vcl.Controls, Vcl.Forms, Vcl.Dialogs, System.Generics.Collections,
   ControllersUnit, PhisicsControllerUnit;
 
@@ -14,7 +15,7 @@ type
     /// <link>aggregation</link>
     Controller1: Controllers;
   public
-    procedure createPanels(list:TList<String>);
+    procedure createPanels(list: TList<String>);
     { Public declarations }
   end;
 
@@ -25,14 +26,14 @@ implementation
 
 {$R *.dfm}
 
-procedure TForm1.createPanels(list:TList<String>);
+procedure TForm1.createPanels(list: TList<String>);
 begin
 
 end;
 
 procedure TForm1.FormCreate(Sender: TObject);
 begin
-  Controller1:=PhisicsController.Create;
+  Controller1 := PhisicsController.Create;
   createPanels(Controller1.getMenu);
 end;
 
