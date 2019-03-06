@@ -14,10 +14,14 @@ type
   private
     caption: string;
     ADOConnection: TADOConnection;
+    function getAnswer: TList<string>;
+    function getAnswerTableName: string;
+    function getAnswerTable(answer: string): TList<string>;
+    //
     function getMenu: TList<string>;
+    //
     procedure setTest(caption: string);
     function getQuest: TList<string>;
-    function getAnswer: TList<string>;
     function getCorrect: TDictionary<integer, integer>;
   published
     constructor create;
@@ -42,24 +46,52 @@ end;
 function AccessAdapter.getAnswer: TList<string>;
 
 var
-  ADOQuery: TADOQuery;
+  // ADOQuery: TADOQuery;
   answer: string;
 begin
-  result := TList<string>.create;
-  ADOQuery := TADOQuery.create(nil);
-  with (ADOQuery) do
-  begin
+  { result := TList<string>.create;  //
+    ADOQuery := TADOQuery.create(nil);
+    with (ADOQuery) do
+    begin
     Connection := ADOConnection;
     close;
     sql.Clear;
     sql.Add('SELECT answer FROM Main WHERE caption="' + self.caption + '";');
     open;
     Active := true;
-  end;
-  ADOQuery.First;
-  answer := ADOQuery.FieldByName('answer').AsString;
+    end;
+    ADOQuery.First; }
+  answer := getAnswerTableName; { ADOQuery.FieldByName('answer').AsString; } //
+  //result := TList<string>.create;
+  result := getAnswerTable(answer);
+  { with (ADOQuery) do
+    begin
+    close;
+    sql.Clear;
+    sql.Add('SELECT caption FROM ' + answer + ';');
+    open;
+    Active := true;
+    end;
+    while not ADOQuery.Eof do
+    begin
+    result.Add(ADOQuery.FieldByName('caption').AsString);
+    ADOQuery.Next;
+    end;
+    ADOQuery.Free; }
+
+end;
+
+function AccessAdapter.getAnswerTable(answer: string): TList<string>;
+var
+  ADOQuery: TADOQuery;
+  // answer: string;
+begin
+
+  result := TList<string>.create; //
+  ADOQuery := TADOQuery.create(nil);
   with (ADOQuery) do
   begin
+    Connection := ADOConnection;
     close;
     sql.Clear;
     sql.Add('SELECT caption FROM ' + answer + ';');
@@ -72,6 +104,25 @@ begin
     ADOQuery.Next;
   end;
   ADOQuery.Free;
+end;
+
+function AccessAdapter.getAnswerTableName: string;
+var
+  ADOQuery: TADOQuery;
+begin
+  // result := TList<string>.create;
+  ADOQuery := TADOQuery.create(nil);
+  with (ADOQuery) do
+  begin
+    Connection := ADOConnection;
+    close;
+    sql.Clear;
+    sql.Add('SELECT answer FROM Main WHERE caption="' + self.caption + '";');
+    open;
+    Active := true;
+  end;
+  ADOQuery.First;
+  result := ADOQuery.FieldByName('answer').AsString; //
 end;
 
 function AccessAdapter.getCorrect: TDictionary<integer, integer>;
