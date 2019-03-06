@@ -26,6 +26,8 @@ type
     function getQuestTable(quest: string): TList<string>;
     //
     function getCorrect: TDictionary<integer, integer>;
+    function getCorrectTableName: string;
+    function getCorrectTable(correct: string): TDictionary<integer, integer>;
 
   published
     constructor create;
@@ -158,21 +160,52 @@ var
   ADOQuery: TADOQuery;
   correct: string;
 begin
-  result := TDictionary<integer, integer>.create;
-  ADOQuery := TADOQuery.create(nil);
-  with (ADOQuery) do
-  begin
+  { result := TDictionary<integer, integer>.create;
+    ADOQuery := TADOQuery.create(nil);
+    with (ADOQuery) do
+    begin
     Connection := ADOConnection;
     close;
     sql.Clear;
     sql.Add('SELECT correct FROM Main WHERE caption="' + self.caption + '";');
     open;
     Active := true;
-  end;
-  ADOQuery.First;
-  correct := ADOQuery.FieldByName('correct').AsString;
+    end;
+    ADOQuery.First;
+    correct := ADOQuery.FieldByName('correct').AsString; }
+  //
+  correct := getCorrectTableName; { ADOQuery.FieldByName('answer').AsString; }
+  // result := TList<string>.create;
+  result := getCorrectTable(correct);
+  //
+  { with (ADOQuery) do
+    begin
+    close;
+    sql.Clear;
+    sql.Add('SELECT quest_id,answer_id FROM ' + correct + ';');
+    open;
+    Active := true;
+    end;
+    ADOQuery.First;
+    while not ADOQuery.Eof do
+    begin
+    result.Add(StrToInt(ADOQuery.FieldByName('quest_id').AsString),
+    StrToInt(ADOQuery.FieldByName('answer_id').AsString));
+    ADOQuery.Next;
+    end;
+    ADOQuery.Free; }
+end;
+
+function AccessAdapter.getCorrectTable(correct: string)
+  : TDictionary<integer, integer>;
+var
+  ADOQuery: TADOQuery;
+begin
+  result := TDictionary<integer, integer>.create;
+  ADOQuery := TADOQuery.create(nil);
   with (ADOQuery) do
   begin
+    Connection := ADOConnection;
     close;
     sql.Clear;
     sql.Add('SELECT quest_id,answer_id FROM ' + correct + ';');
@@ -187,6 +220,26 @@ begin
     ADOQuery.Next;
   end;
   ADOQuery.Free;
+end;
+
+function AccessAdapter.getCorrectTableName: string;
+var
+  ADOQuery: TADOQuery;
+  // correct: string;
+begin
+  // result := TDictionary<integer, integer>.create;
+  ADOQuery := TADOQuery.create(nil);
+  with (ADOQuery) do
+  begin
+    Connection := ADOConnection;
+    close;
+    sql.Clear;
+    sql.Add('SELECT correct FROM Main WHERE caption="' + self.caption + '";');
+    open;
+    Active := true;
+  end;
+  ADOQuery.First;
+  { correct } result := ADOQuery.FieldByName('correct').AsString;
 end;
 
 function AccessAdapter.getMenu: TList<string>; { }
