@@ -8,9 +8,16 @@ uses
   MenuUnit,
   MainUnit,
   ControllersUnit,
-  System.Generics.Collections;
+  System.Generics.Collections,
+  SysUtils,
+  Dialogs;
 
 type
+  EPhisicsControllerError = class(Exception);
+  // var
+  // ErrorCondition: Boolean;
+  // end;
+
   PhisicsController = class(TInterfacedObject, Controllers)
   private
     Test: Tests;
@@ -27,23 +34,44 @@ type
 implementation
 
 function PhisicsController.getAnswer: TList<string>;
+// var
+// d: real;
 begin
-  result := TList<string>.create;
-  result := Test.getAnswer;
+  try
+    // d := 3 / 0;
+    result := TList<string>.create;
+    result := Test.getAnswer;
+    raise EPhisicsControllerError.create('1');
+  except
+    on E: EPhisicsControllerError do
+      ShowMessage(E.Message);
+  end;
+
 end;
 
 function PhisicsController.getCorrect: TDictionary<integer, integer>;
 begin
-  result := TDictionary<integer, integer>.create;
-  result := Test.getCorrect;
+  try
+    result := TDictionary<integer, integer>.create;
+    result := Test.getCorrect;
+    raise EPhisicsControllerError.create('2');
+  except
+    on E: EPhisicsControllerError do
+      ShowMessage(E.Message);
+  end;
 end;
 
 function PhisicsController.getMenu: TList<string>;
 begin
-  result := TList<string>.create;
-  Menu1 := Menu.create;
-  result := Menu1.getMenu;
-
+  try
+    result := TList<string>.create;
+    Menu1 := Menu.create;
+    result := Menu1.getMenu;
+    raise EPhisicsControllerError.create('3');
+  except
+    on E: EPhisicsControllerError do
+      ShowMessage(E.Message);
+  end;
   // result.Add('Test');
   // result.Add('Test2');
   // result.Add('Test3');
@@ -51,14 +79,26 @@ end;
 
 function PhisicsController.getQuest: TList<string>;
 begin
-  result := TList<string>.create;
-  result := Test.getQuest;
+  try
+    result := TList<string>.create;
+    result := Test.getQuest;
+    raise EPhisicsControllerError.create('4');
+  except
+    on E: EPhisicsControllerError do
+      ShowMessage(E.Message);
+  end;
 end;
 
 procedure PhisicsController.setTest(caption: string);
 begin
-  Test := Test1.create;
-  Test.setTest(caption);
+  try
+    Test := Test1.create;
+    Test.setTest(caption);
+    raise EPhisicsControllerError.create('5');
+  except
+    on E: EPhisicsControllerError do
+      ShowMessage(E.Message);
+  end;
 end;
 
 end.
