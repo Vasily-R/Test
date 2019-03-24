@@ -10,7 +10,15 @@ uses
   ControllersUnit,
   System.Generics.Collections,
   SysUtils,
-  Dialogs;
+  Dialogs,
+  CodeSiteLogging;
+
+const  //
+  a = 3;
+  b = 2;
+  c = 5;
+  d = 4;
+  e = 1;
 
 type
   EPhisicsControllerError = class(Exception);
@@ -34,18 +42,18 @@ type
 implementation
 
 function PhisicsController.getAnswer: TList<string>;
-// var
-// d: real;
 begin
   try
-    // d := 3 / 0;
     result := TList<string>.create;
     result := Test.getAnswer;
     raise EPhisicsControllerError.create('1');
   except
-    on E: EPhisicsControllerError do
-      ShowMessage(E.Message);
+    on e: EPhisicsControllerError do
+      ShowMessage(e.Message);
   end;
+  CodeSite.Send('getAnswer');
+  CodeSite.Send('A', a);
+  CodeSite.Assert(a < b, 'Error');
 
 end;
 
@@ -56,9 +64,12 @@ begin
     result := Test.getCorrect;
     raise EPhisicsControllerError.create('2');
   except
-    on E: EPhisicsControllerError do
-      ShowMessage(E.Message);
+    on e: EPhisicsControllerError do
+      ShowMessage(e.Message);
   end;
+  CodeSite.Send('getCorrect');
+  CodeSite.Send('B', b);
+  CodeSite.Assert(c < b, 'Error');
 end;
 
 function PhisicsController.getMenu: TList<string>;
@@ -69,12 +80,15 @@ begin
     result := Menu1.getMenu;
     raise EPhisicsControllerError.create('3');
   except
-    on E: EPhisicsControllerError do
-      ShowMessage(E.Message);
+    on e: EPhisicsControllerError do
+      ShowMessage(e.Message);
   end;
   // result.Add('Test');
   // result.Add('Test2');
   // result.Add('Test3');
+  CodeSite.Send('getMenu');
+  CodeSite.Send('C', c);
+  CodeSite.Assert(c < a, 'Error');
 end;
 
 function PhisicsController.getQuest: TList<string>;
@@ -84,9 +98,12 @@ begin
     result := Test.getQuest;
     raise EPhisicsControllerError.create('4');
   except
-    on E: EPhisicsControllerError do
-      ShowMessage(E.Message);
+    on e: EPhisicsControllerError do
+      ShowMessage(e.Message);
   end;
+  CodeSite.Send('getQuest');
+  CodeSite.Send('D', d);
+  CodeSite.Assert(c < d, 'Error');
 end;
 
 procedure PhisicsController.setTest(caption: string);
@@ -96,9 +113,12 @@ begin
     Test.setTest(caption);
     raise EPhisicsControllerError.create('5');
   except
-    on E: EPhisicsControllerError do
-      ShowMessage(E.Message);
+    on e: EPhisicsControllerError do
+      ShowMessage(e.Message);
   end;
+  CodeSite.Send('setTest');
+  CodeSite.Send('E', e);
+  CodeSite.Assert(c < e, 'Error');
 end;
 
 end.
