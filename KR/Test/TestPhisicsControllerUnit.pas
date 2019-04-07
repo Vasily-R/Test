@@ -38,12 +38,12 @@ procedure TestPhisicsController.TestGetQuest;
 var
   ReturnValue: TList<string>;
 begin
-  FPhisicsController.setTest('Движение с постоянным ускорением');
+  FPhisicsController.setTest('Вопросы по истории России');
   ReturnValue := FPhisicsController.GetQuest;
   CheckEquals(ReturnValue.Items[1],
-    'Как определяется положение материальной точки?');
+    'Какой город стал столицей Древнерусского государства?');
   CheckNotEquals(ReturnValue.Items[1], '+++');
-  CheckEquals(ReturnValue.count, 9);
+  CheckEquals(ReturnValue.count, 5);
   CheckNotEquals(ReturnValue.count, 11);
 end;
 
@@ -63,16 +63,16 @@ var
   ReturnValue: TList<string>;
   // ReturnValue2: TList<string>;
 begin
-  FPhisicsController.setTest('Движение с постоянным ускорением');
+  FPhisicsController.setTest('Вопросы по истории России');
   // ReturnValue2 := FPhisicsController.GetQuest;
   ReturnValue := FPhisicsController.GetAnswer;
   CheckEquals(ReturnValue.Items[1],
-    'это координата, которую имеет МТ в данный момент времени');
+    'В 882 князь Олег захватил Киев и сделал его столицей государства.');
   CheckNotEquals(ReturnValue.Items[1], '+++');
   CheckEquals(ReturnValue.Items[3],
-    'это функция СКОРОСТЬ есть векторная кинематическая характеристика движения');
+    'При Владимире I Святославовиче, известен также как Владимир Святой, Владимир Великий, в истории церкви — Владимир Креститель.');
   CheckNotEquals(ReturnValue.Items[3], '+++');
-  CheckEquals(ReturnValue.count, 10);
+  CheckEquals(ReturnValue.count, 5);
   CheckNotEquals(ReturnValue.count, 11);
 end;
 
@@ -80,12 +80,12 @@ procedure TestPhisicsController.TestGetCorrect;
 var
   ReturnValue: TDictionary<integer, integer>;
 begin
-  FPhisicsController.setTest('Движение с постоянным ускорением');
-  ReturnValue:=FPhisicsController.getCorrect;
-  CheckEquals(ReturnValue.Items[11], 1);
-  CheckEquals(ReturnValue.Items[12], 2);
-  CheckNotEquals(ReturnValue.Items[12], 12);
-  CheckEquals(ReturnValue.count, 24);
+  FPhisicsController.setTest('Вопросы по истории России');
+  ReturnValue := FPhisicsController.getCorrect;
+  CheckEquals(ReturnValue.Items[1], 1);
+  CheckEquals(ReturnValue.Items[2], 2);
+  CheckNotEquals(ReturnValue.Items[2], 12);
+  CheckEquals(ReturnValue.count, 5);
 end;
 
 procedure TestPhisicsController.TestGetMenu;
@@ -97,7 +97,7 @@ begin
   // CheckNotEquals(Menu.First, 'Test2');
   // CheckEquals(Menu.Items[2], 'Test3'); // Another record type
   ReturnValue := FPhisicsController.getMenu;
-  CheckEquals(ReturnValue.Items[0], 'Движение с постоянным ускорением');
+  CheckEquals(ReturnValue.Items[0], 'Вопросы по истории России');
   CheckNotEquals(ReturnValue.Items[0], '+++');
   CheckEquals(ReturnValue.count, 1);
 end;
@@ -109,14 +109,14 @@ var
   // ReturnValue2: TList<string>;
 begin
   // FPhisicsController.setTest('Движение с постоянным ускорением');
-  caption := 'Движение с постоянным ускорением';
+  caption := 'Вопросы по истории России';
   FPhisicsController.setTest(caption);
 
   ReturnValue := FPhisicsController.GetQuest;
-  CheckEquals(ReturnValue.Items[2], 'Что такое декартова система координат?');
+  CheckEquals(ReturnValue.Items[2], 'Когда Русь приняла христианство?');
   CheckNotEquals(ReturnValue.Items[2], '+++');
   CheckEquals(ReturnValue.Items[3],
-    'Дайте определение механического движения.');
+    'При каком князе произошло крещение Руси?');
   CheckNotEquals(ReturnValue.Items[3], '+++');
   CheckNotEquals(ReturnValue.Items[2], ReturnValue.Items[3]);
 

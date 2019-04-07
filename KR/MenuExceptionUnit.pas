@@ -9,6 +9,7 @@ uses
 type
   MenuException = class(TInterfacedObject, Main)
   private
+    /// <link>aggregation</link>
     MenuSource: Menu;
   public
     function getMenu: TList<string>;

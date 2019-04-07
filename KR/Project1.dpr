@@ -14,7 +14,11 @@ uses
   PhisicsControllerExceptionUnit in 'PhisicsControllerExceptionUnit.pas',
   AccessAdapterExceptionUnit in 'AccessAdapterExceptionUnit.pas',
   MenuExceptionUnit in 'MenuExceptionUnit.pas',
-  Test1ExceptionUnit in 'Test1ExceptionUnit.pas';
+  Test1ExceptionUnit in 'Test1ExceptionUnit.pas',
+  Test1LoggingUnit in 'Test1LoggingUnit.pas',
+  MenuLoggingUnit in 'MenuLoggingUnit.pas',
+  PhisicsLoggingUnit in 'PhisicsLoggingUnit.pas',
+  AccessAdapterLoggingUnit in 'AccessAdapterLoggingUnit.pas';
 
 {$R *.res}
 

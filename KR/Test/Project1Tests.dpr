@@ -29,7 +29,16 @@ uses
   AccessAdapterUnit in '..\AccessAdapterUnit.pas',
   MenuUnit in '..\MenuUnit.pas',
   TestMenuUnit in 'TestMenuUnit.pas',
-  TestTest1Unit in 'TestTest1Unit.pas';
+  TestTest1Unit in 'TestTest1Unit.pas',
+  AccessAdapterLoggingUnit in '..\AccessAdapterLoggingUnit.pas',
+  PhisicsLoggingUnit in '..\PhisicsLoggingUnit.pas',
+  MenuLoggingUnit in '..\MenuLoggingUnit.pas',
+  Test1LoggingUnit in '..\Test1LoggingUnit.pas',
+  Test1ExceptionUnit in '..\Test1ExceptionUnit.pas',
+  MenuExceptionUnit in '..\MenuExceptionUnit.pas',
+  AccessAdapterExceptionUnit in '..\AccessAdapterExceptionUnit.pas',
+  PhisicsControllerExceptionUnit in '..\PhisicsControllerExceptionUnit.pas',
+  TestAccessAdapterUnit in 'TestAccessAdapterUnit.pas';
 
 {$R *.RES}
 

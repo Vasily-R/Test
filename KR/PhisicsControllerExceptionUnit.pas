@@ -16,6 +16,7 @@ uses
 type
   PhisicsControllerException = class(TInterfacedObject, Controllers)
   private
+    /// <link>aggregation</link>
     PhisicsControllerSource: PhisicsController;
   public
     procedure setTest(caption: string);

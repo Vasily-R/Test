@@ -3,9 +3,9 @@ unit PhisicsControllerUnit;
 interface
 
 uses
-  Test1Unit,
+  Test1LoggingUnit,
   TestsUnit,
-  MenuUnit,
+  MenuLoggingUnit,
   MainUnit,
   ControllersUnit,
   System.Generics.Collections,
@@ -77,7 +77,8 @@ function PhisicsController.getMenu: TList<string>;
 begin
   // try
   result := TList<string>.create;
-  Menu1 := Menu.create;
+  // Menu1 := Menu.create;
+  Menu1 := MenuLogging.create;
   result := Menu1.getMenu;
   // raise EPhisicsControllerError.create('3');
   // except
@@ -110,7 +111,8 @@ end;
 procedure PhisicsController.setTest(caption: string);
 begin
   // try
-  Test := Test1.create;
+  // Test := Test1.create;
+  Test := Test1Logging.create;
   Test.setTest(caption);
   // raise EPhisicsControllerError.create('5');
   // except

@@ -6,12 +6,12 @@
     <property name="$name" value="default" />
     <reference referencedUin="delphi:e_class:src:Project1:Unit1.TForm1">
       <property name="$shortcutReference" value="true" />
-      <property name="bounds" value="380,220,141,190" />
+      <property name="bounds" value="500,240,141,190" />
       <property name="location_set_by_user" value="True" />
       <reference referencedUin="delphi:e_field:src:Project1:Unit1.TForm1.Controller1" />
       <reference referencedUin="delphi:l_ast:src:Project1:Unit1.TForm1.Controller1">
-        <property name="sourceAnchor" value="521,232" />
-        <property name="targetAnchor" value="760,232" />
+        <property name="sourceAnchor" value="641,280" />
+        <property name="targetAnchor" value="760,280" />
         <property name="bendpoints" value="" />
       </reference>
       <reference referencedUin="delphi:e_method:src:Project1:Unit1.TForm1.FormCreate(System.TObject)" />
@@ -56,8 +56,8 @@
       <reference referencedUin="delphi:e_method:src:Project1:PhisicsControllerUnit.PhisicsController.getMenu()" />
       <reference referencedUin="delphi:e_field:src:Project1:PhisicsControllerUnit.PhisicsController.Menu1" />
       <reference referencedUin="delphi:l_ast:src:Project1:PhisicsControllerUnit.PhisicsController.Menu1">
-        <property name="sourceAnchor" value="888,562" />
-        <property name="targetAnchor" value="888,580" />
+        <property name="sourceAnchor" value="914,562" />
+        <property name="targetAnchor" value="914,600" />
         <property name="bendpoints" value="" />
       </reference>
       <reference referencedUin="delphi:e_field:src:Project1:PhisicsControllerUnit.PhisicsController.Test" />
@@ -76,27 +76,27 @@
       <property name="bounds" value="580,560,149,115" />
       <property name="location_set_by_user" value="True" />
       <reference referencedUin="delphi:l_impl:src:Project1:MenuUnit.Menu:MainUnit.Main">
-        <property name="sourceAnchor" value="729,619" />
-        <property name="targetAnchor" value="840,619" />
+        <property name="sourceAnchor" value="729,637" />
+        <property name="targetAnchor" value="840,637" />
         <property name="bendpoints" value="" />
       </reference>
       <reference referencedUin="delphi:e_method:src:Project1:MenuUnit.Menu.getMenu()" />
       <reference referencedUin="delphi:e_field:src:Project1:MenuUnit.Menu.Adapter1" />
       <reference referencedUin="delphi:l_ast:src:Project1:MenuUnit.Menu.Adapter1">
-        <property name="sourceAnchor" value="580,580" />
-        <property name="targetAnchor" value="507,580" />
+        <property name="sourceAnchor" value="580,617" />
+        <property name="targetAnchor" value="527,617" />
         <property name="bendpoints" value="" />
       </reference>
     </reference>
     <reference referencedUin="delphi:e_class:src:Project1:MainUnit.Main">
       <property name="$shortcutReference" value="true" />
-      <property name="bounds" value="840,580,149,81" />
+      <property name="bounds" value="840,600,149,81" />
       <property name="location_set_by_user" value="True" />
       <reference referencedUin="delphi:e_method:src:Project1:MainUnit.Main.getMenu()" />
     </reference>
     <reference referencedUin="delphi:e_class:src:Project1:AdaptersUnit.Adapters">
       <property name="$shortcutReference" value="true" />
-      <property name="bounds" value="260,520,247,141" />
+      <property name="bounds" value="280,540,247,141" />
       <property name="location_set_by_user" value="True" />
       <reference referencedUin="delphi:e_method:src:Project1:AdaptersUnit.Adapters.getMenu()" />
       <reference referencedUin="delphi:e_method:src:Project1:AdaptersUnit.Adapters.setTest(System.string)" />
@@ -106,11 +106,11 @@
     </reference>
     <reference referencedUin="delphi:e_class:src:Project1:AccessAdapterUnit.AccessAdapter">
       <property name="$shortcutReference" value="true" />
-      <property name="bounds" value="80,160,267,295" />
+      <property name="bounds" value="60,120,278,295" />
       <property name="location_set_by_user" value="True" />
       <reference referencedUin="delphi:l_impl:src:Project1:AccessAdapterUnit.AccessAdapter:AdaptersUnit.Adapters">
-        <property name="sourceAnchor" value="303,455" />
-        <property name="targetAnchor" value="303,520" />
+        <property name="sourceAnchor" value="309,415" />
+        <property name="targetAnchor" value="309,540" />
         <property name="bendpoints" value="" />
       </reference>
       <reference referencedUin="delphi:e_method:src:Project1:AccessAdapterUnit.AccessAdapter.getMenu()" />
@@ -139,24 +139,198 @@
     </reference>
     <reference referencedUin="delphi:e_class:src:Project1:Test1Unit.Test1">
       <property name="$shortcutReference" value="true" />
-      <property name="bounds" value="-20,640,247,175" />
+      <property name="bounds" value="80,760,247,175" />
       <property name="location_set_by_user" value="True" />
       <reference referencedUin="delphi:l_impl:src:Project1:Test1Unit.Test1:TestsUnit.Tests">
-        <property name="sourceAnchor" value="113,640" />
-        <property name="targetAnchor" value="113,586" />
+        <property name="sourceAnchor" value="163,760" />
+        <property name="targetAnchor" value="163,586" />
         <property name="bendpoints" value="" />
       </reference>
       <reference referencedUin="delphi:e_method:src:Project1:Test1Unit.Test1.setTest(System.string)" />
       <reference referencedUin="delphi:e_field:src:Project1:Test1Unit.Test1.Adapter" />
       <reference referencedUin="delphi:l_ast:src:Project1:Test1Unit.Test1.Adapter">
-        <property name="sourceAnchor" value="227,650" />
-        <property name="targetAnchor" value="260,650" />
+        <property name="sourceAnchor" value="303,760" />
+        <property name="targetAnchor" value="303,681" />
         <property name="bendpoints" value="" />
       </reference>
       <reference referencedUin="delphi:e_method:src:Project1:Test1Unit.Test1.getQuest()" />
       <reference referencedUin="delphi:e_method:src:Project1:Test1Unit.Test1.getAnswer()" />
       <reference referencedUin="delphi:e_method:src:Project1:Test1Unit.Test1.getCorrect()" />
       <reference referencedUin="delphi:e_method:src:Project1:Test1Unit.Test1.create()" />
+    </reference>
+    <reference referencedUin="delphi:e_class:src:Project1:PhisicsControllerExceptionUnit.PhisicsControllerException">
+      <property name="$shortcutReference" value="true" />
+      <property name="bounds" value="1060,280,348,175" />
+      <property name="location_set_by_user" value="True" />
+      <reference referencedUin="delphi:l_ast:src:Project1:PhisicsControllerExceptionUnit.PhisicsControllerException.PhisicsControllerSource">
+        <property name="sourceAnchor" value="1060,413" />
+        <property name="targetAnchor" value="1009,413" />
+        <property name="bendpoints" value="" />
+      </reference>
+      <reference referencedUin="delphi:e_field:src:Project1:PhisicsControllerExceptionUnit.PhisicsControllerException.PhisicsControllerSource" />
+      <reference referencedUin="delphi:e_method:src:Project1:PhisicsControllerExceptionUnit.PhisicsControllerException.setTest(System.string)" />
+      <reference referencedUin="delphi:e_method:src:Project1:PhisicsControllerExceptionUnit.PhisicsControllerException.getMenu()" />
+      <reference referencedUin="delphi:e_method:src:Project1:PhisicsControllerExceptionUnit.PhisicsControllerException.getQuest()" />
+      <reference referencedUin="delphi:e_method:src:Project1:PhisicsControllerExceptionUnit.PhisicsControllerException.getAnswer()" />
+      <reference referencedUin="delphi:e_method:src:Project1:PhisicsControllerExceptionUnit.PhisicsControllerException.getCorrect()" />
+      <reference referencedUin="delphi:l_impl:src:Project1:PhisicsControllerExceptionUnit.PhisicsControllerException:ControllersUnit.Controllers">
+        <property name="sourceAnchor" value="1060,300" />
+        <property name="targetAnchor" value="1007,300" />
+        <property name="bendpoints" value="" />
+      </reference>
+    </reference>
+    <reference referencedUin="delphi:e_class:src:Project1:PhisicsLoggingUnit.PhisicsControllerLogging">
+      <property name="$shortcutReference" value="true" />
+      <property name="bounds" value="1080,40,294,175" />
+      <property name="location_set_by_user" value="True" />
+      <reference referencedUin="delphi:e_field:src:Project1:PhisicsLoggingUnit.PhisicsControllerLogging.PhisicsControllerExcept" />
+      <reference referencedUin="delphi:e_method:src:Project1:PhisicsLoggingUnit.PhisicsControllerLogging.setTest(System.string)" />
+      <reference referencedUin="delphi:e_method:src:Project1:PhisicsLoggingUnit.PhisicsControllerLogging.getMenu()" />
+      <reference referencedUin="delphi:e_method:src:Project1:PhisicsLoggingUnit.PhisicsControllerLogging.getQuest()" />
+      <reference referencedUin="delphi:e_method:src:Project1:PhisicsLoggingUnit.PhisicsControllerLogging.getAnswer()" />
+      <reference referencedUin="delphi:e_method:src:Project1:PhisicsLoggingUnit.PhisicsControllerLogging.getCorrect()" />
+      <reference referencedUin="delphi:l_impl:src:Project1:PhisicsLoggingUnit.PhisicsControllerLogging:ControllersUnit.Controllers">
+        <property name="sourceAnchor" value="1080,197" />
+        <property name="targetAnchor" value="1007,197" />
+        <property name="bendpoints" value="" />
+      </reference>
+      <reference referencedUin="delphi:l_ast:src:Project1:PhisicsLoggingUnit.PhisicsControllerLogging.PhisicsControllerExcept">
+        <property name="sourceAnchor" value="1227,215" />
+        <property name="targetAnchor" value="1227,280" />
+        <property name="bendpoints" value="" />
+      </reference>
+    </reference>
+    <reference referencedUin="delphi:e_class:src:Project1:Test1ExceptionUnit.Test1Exception">
+      <property name="$shortcutReference" value="true" />
+      <property name="bounds" value="-200,760,247,175" />
+      <property name="location_set_by_user" value="True" />
+      <reference referencedUin="delphi:e_field:src:Project1:Test1ExceptionUnit.Test1Exception.TestSource" />
+      <reference referencedUin="delphi:e_method:src:Project1:Test1ExceptionUnit.Test1Exception.setTest(System.string)" />
+      <reference referencedUin="delphi:e_method:src:Project1:Test1ExceptionUnit.Test1Exception.getQuest()" />
+      <reference referencedUin="delphi:e_method:src:Project1:Test1ExceptionUnit.Test1Exception.getAnswer()" />
+      <reference referencedUin="delphi:e_method:src:Project1:Test1ExceptionUnit.Test1Exception.getCorrect()" />
+      <reference referencedUin="delphi:e_method:src:Project1:Test1ExceptionUnit.Test1Exception.create()" />
+      <reference referencedUin="delphi:l_impl:src:Project1:Test1ExceptionUnit.Test1Exception:TestsUnit.Tests">
+        <property name="sourceAnchor" value="23,760" />
+        <property name="targetAnchor" value="23,586" />
+        <property name="bendpoints" value="" />
+      </reference>
+      <reference referencedUin="delphi:l_ast:src:Project1:Test1ExceptionUnit.Test1Exception.TestSource">
+        <property name="sourceAnchor" value="47,847" />
+        <property name="targetAnchor" value="80,847" />
+        <property name="bendpoints" value="" />
+      </reference>
+    </reference>
+    <reference referencedUin="delphi:e_class:src:Project1:Test1LoggingUnit.Test1Logging">
+      <property name="$shortcutReference" value="true" />
+      <property name="bounds" value="-300,540,247,175" />
+      <property name="location_set_by_user" value="True" />
+      <reference referencedUin="delphi:e_field:src:Project1:Test1LoggingUnit.Test1Logging.Test1Except" />
+      <reference referencedUin="delphi:e_method:src:Project1:Test1LoggingUnit.Test1Logging.setTest(System.string)" />
+      <reference referencedUin="delphi:e_method:src:Project1:Test1LoggingUnit.Test1Logging.getQuest()" />
+      <reference referencedUin="delphi:e_method:src:Project1:Test1LoggingUnit.Test1Logging.getAnswer()" />
+      <reference referencedUin="delphi:e_method:src:Project1:Test1LoggingUnit.Test1Logging.getCorrect()" />
+      <reference referencedUin="delphi:e_method:src:Project1:Test1LoggingUnit.Test1Logging.create()" />
+      <reference referencedUin="delphi:l_impl:src:Project1:Test1LoggingUnit.Test1Logging:TestsUnit.Tests">
+        <property name="sourceAnchor" value="-53,563" />
+        <property name="targetAnchor" value="0,563" />
+        <property name="bendpoints" value="" />
+      </reference>
+      <reference referencedUin="delphi:l_ast:src:Project1:Test1LoggingUnit.Test1Logging.Test1Except">
+        <property name="sourceAnchor" value="-126,715" />
+        <property name="targetAnchor" value="-126,760" />
+        <property name="bendpoints" value="" />
+      </reference>
+    </reference>
+    <reference referencedUin="delphi:e_class:src:Project1:MenuExceptionUnit.MenuException">
+      <property name="$shortcutReference" value="true" />
+      <property name="bounds" value="800,780,218,115" />
+      <property name="location_set_by_user" value="True" />
+      <reference referencedUin="delphi:e_field:src:Project1:MenuExceptionUnit.MenuException.MenuSource" />
+      <reference referencedUin="delphi:e_method:src:Project1:MenuExceptionUnit.MenuException.getMenu()" />
+      <reference referencedUin="delphi:l_impl:src:Project1:MenuExceptionUnit.MenuException:MainUnit.Main">
+        <property name="sourceAnchor" value="914,780" />
+        <property name="targetAnchor" value="914,681" />
+        <property name="bendpoints" value="" />
+      </reference>
+      <reference referencedUin="delphi:l_ast:src:Project1:MenuExceptionUnit.MenuException.MenuSource">
+        <property name="sourceAnchor" value="843,780" />
+        <property name="targetAnchor" value="720,675" />
+        <property name="bendpoints" value="" />
+      </reference>
+    </reference>
+    <reference referencedUin="delphi:e_class:src:Project1:MenuLoggingUnit.MenuLogging">
+      <property name="$shortcutReference" value="true" />
+      <property name="bounds" value="1080,760,196,115" />
+      <property name="location_set_by_user" value="True" />
+      <reference referencedUin="delphi:e_field:src:Project1:MenuLoggingUnit.MenuLogging.MenuExcept" />
+      <reference referencedUin="delphi:e_method:src:Project1:MenuLoggingUnit.MenuLogging.getMenu()" />
+      <reference referencedUin="delphi:l_impl:src:Project1:MenuLoggingUnit.MenuLogging:MainUnit.Main">
+        <property name="sourceAnchor" value="1093,760" />
+        <property name="targetAnchor" value="974,681" />
+        <property name="bendpoints" value="" />
+      </reference>
+      <reference referencedUin="delphi:l_ast:src:Project1:MenuLoggingUnit.MenuLogging.MenuExcept">
+        <property name="sourceAnchor" value="1080,827" />
+        <property name="targetAnchor" value="1018,827" />
+        <property name="bendpoints" value="" />
+      </reference>
+    </reference>
+    <reference referencedUin="delphi:e_class:src:Project1:AccessAdapterExceptionUnit.AccessAdapterException">
+      <property name="$shortcutReference" value="true" />
+      <property name="bounds" value="400,-60,327,280" />
+      <property name="location_set_by_user" value="True" />
+      <reference referencedUin="delphi:e_field:src:Project1:AccessAdapterExceptionUnit.AccessAdapterException.AccessAdapterSource" />
+      <reference referencedUin="delphi:e_method:src:Project1:AccessAdapterExceptionUnit.AccessAdapterException.getAnswer()" />
+      <reference referencedUin="delphi:e_method:src:Project1:AccessAdapterExceptionUnit.AccessAdapterException.getAnswerTableName()" />
+      <reference referencedUin="delphi:e_method:src:Project1:AccessAdapterExceptionUnit.AccessAdapterException.getAnswerTable(System.string)" />
+      <reference referencedUin="delphi:e_method:src:Project1:AccessAdapterExceptionUnit.AccessAdapterException.getMenu()" />
+      <reference referencedUin="delphi:e_method:src:Project1:AccessAdapterExceptionUnit.AccessAdapterException.setTest(System.string)" />
+      <reference referencedUin="delphi:e_method:src:Project1:AccessAdapterExceptionUnit.AccessAdapterException.getQuest()" />
+      <reference referencedUin="delphi:e_method:src:Project1:AccessAdapterExceptionUnit.AccessAdapterException.getQuestTableName()" />
+      <reference referencedUin="delphi:e_method:src:Project1:AccessAdapterExceptionUnit.AccessAdapterException.getQuestTable(System.string)" />
+      <reference referencedUin="delphi:e_method:src:Project1:AccessAdapterExceptionUnit.AccessAdapterException.getCorrect()" />
+      <reference referencedUin="delphi:e_method:src:Project1:AccessAdapterExceptionUnit.AccessAdapterException.getCorrectTableName()" />
+      <reference referencedUin="delphi:e_method:src:Project1:AccessAdapterExceptionUnit.AccessAdapterException.getCorrectTable(System.string)" />
+      <reference referencedUin="delphi:e_method:src:Project1:AccessAdapterExceptionUnit.AccessAdapterException.create()" />
+      <reference referencedUin="delphi:l_impl:src:Project1:AccessAdapterExceptionUnit.AccessAdapterException:AdaptersUnit.Adapters">
+        <property name="sourceAnchor" value="463,220" />
+        <property name="targetAnchor" value="463,540" />
+        <property name="bendpoints" value="" />
+      </reference>
+      <reference referencedUin="delphi:l_ast:src:Project1:AccessAdapterExceptionUnit.AccessAdapterException.AccessAdapterSource">
+        <property name="sourceAnchor" value="400,170" />
+        <property name="targetAnchor" value="338,170" />
+        <property name="bendpoints" value="" />
+      </reference>
+    </reference>
+    <reference referencedUin="delphi:e_class:src:Project1:AccessAdapterLoggingUnit.AccessAdapterLogging">
+      <property name="$shortcutReference" value="true" />
+      <property name="bounds" value="-300,-40,305,280" />
+      <property name="location_set_by_user" value="True" />
+      <reference referencedUin="delphi:e_field:src:Project1:AccessAdapterLoggingUnit.AccessAdapterLogging.AccessAdapterExcept" />
+      <reference referencedUin="delphi:e_method:src:Project1:AccessAdapterLoggingUnit.AccessAdapterLogging.getAnswerTableName()" />
+      <reference referencedUin="delphi:e_method:src:Project1:AccessAdapterLoggingUnit.AccessAdapterLogging.getAnswerTable(System.string)" />
+      <reference referencedUin="delphi:e_method:src:Project1:AccessAdapterLoggingUnit.AccessAdapterLogging.getCorrectTableName()" />
+      <reference referencedUin="delphi:e_method:src:Project1:AccessAdapterLoggingUnit.AccessAdapterLogging.getCorrectTable(System.string)" />
+      <reference referencedUin="delphi:e_method:src:Project1:AccessAdapterLoggingUnit.AccessAdapterLogging.getQuestTableName()" />
+      <reference referencedUin="delphi:e_method:src:Project1:AccessAdapterLoggingUnit.AccessAdapterLogging.getQuestTable(System.string)" />
+      <reference referencedUin="delphi:e_method:src:Project1:AccessAdapterLoggingUnit.AccessAdapterLogging.getMenu()" />
+      <reference referencedUin="delphi:e_method:src:Project1:AccessAdapterLoggingUnit.AccessAdapterLogging.setTest(System.string)" />
+      <reference referencedUin="delphi:e_method:src:Project1:AccessAdapterLoggingUnit.AccessAdapterLogging.getQuest()" />
+      <reference referencedUin="delphi:e_method:src:Project1:AccessAdapterLoggingUnit.AccessAdapterLogging.getAnswer()" />
+      <reference referencedUin="delphi:e_method:src:Project1:AccessAdapterLoggingUnit.AccessAdapterLogging.getCorrect()" />
+      <reference referencedUin="delphi:e_method:src:Project1:AccessAdapterLoggingUnit.AccessAdapterLogging.create()" />
+      <reference referencedUin="delphi:l_impl:src:Project1:AccessAdapterLoggingUnit.AccessAdapterLogging:AdaptersUnit.Adapters">
+        <property name="sourceAnchor" value="2,239" />
+        <property name="targetAnchor" value="327,540" />
+        <property name="bendpoints" value="" />
+      </reference>
+      <reference referencedUin="delphi:l_ast:src:Project1:AccessAdapterLoggingUnit.AccessAdapterLogging.AccessAdapterExcept">
+        <property name="sourceAnchor" value="5,90" />
+        <property name="targetAnchor" value="400,90" />
+        <property name="bendpoints" value="" />
+      </reference>
     </reference>
   </view>
 </nodeSet>

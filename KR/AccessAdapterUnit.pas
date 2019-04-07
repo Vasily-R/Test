@@ -45,7 +45,7 @@ begin
     mode := cmShareDenyNone;
     LoginPrompt := false;
     ConnectionString := 'Provider=Microsoft.ACE.OLEDB.12.0;' +
-      'Data Source=Phisics.accdb;' + 'persist security info=false';
+      'Data Source=Íistory.accdb;' + 'persist security info=false';
     connected := true;
   end;
 end;

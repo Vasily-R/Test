@@ -94,6 +94,15 @@
 			<DCCReference Include="..\MenuUnit.pas"/>
 			<DCCReference Include="TestMenuUnit.pas"/>
 			<DCCReference Include="TestTest1Unit.pas"/>
+			<DCCReference Include="..\AccessAdapterLoggingUnit.pas"/>
+			<DCCReference Include="..\PhisicsLoggingUnit.pas"/>
+			<DCCReference Include="..\MenuLoggingUnit.pas"/>
+			<DCCReference Include="..\Test1LoggingUnit.pas"/>
+			<DCCReference Include="..\Test1ExceptionUnit.pas"/>
+			<DCCReference Include="..\MenuExceptionUnit.pas"/>
+			<DCCReference Include="..\AccessAdapterExceptionUnit.pas"/>
+			<DCCReference Include="..\PhisicsControllerExceptionUnit.pas"/>
+			<DCCReference Include="TestAccessAdapterUnit.pas"/>
 			<None Include="ModelSupport_Project1Tests\default.txaPackage"/>
 			<None Include="ModelSupport_Project1Tests\default.txvpck"/>
 			<None Include="ModelSupport_Project1Tests\Project1Tests\default.txvpck"/>

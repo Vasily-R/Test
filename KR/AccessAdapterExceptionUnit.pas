@@ -15,6 +15,7 @@ type
   AccessAdapterException = class(TInterfacedObject, Adapters)
   private
     // caption: string;
+    /// <link>aggregation</link>
     AccessAdapterSource: AccessAdapter;
   public
     function getAnswer: TList<string>;

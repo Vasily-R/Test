@@ -46,7 +46,7 @@ var
   ReturnValue: TList<string>;
 begin
   ReturnValue := FMenu.getMenu;
-  CheckEquals(ReturnValue.Items[0], 'Движение с постоянным ускорением');
+  CheckEquals(ReturnValue.Items[0], 'Вопросы по истории России');
   CheckEquals(ReturnValue.Count, 1);
   CheckNotEquals(ReturnValue.Items[0], '+++');
 

@@ -9,6 +9,7 @@ uses
 type
   Test1Exception = class(TInterfacedObject, Tests)
   private
+    /// <link>aggregation</link>
     TestSource: Test1;
   public
     procedure setTest(caption: string);

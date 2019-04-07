@@ -17,7 +17,8 @@ uses
   Vcl.Dialogs,
   System.Generics.Collections,
   ControllersUnit,
-  PhisicsControllerUnit,
+ // PhisicsControllerUnit,
+  PhisicsControllerExceptionUnit,
   Vcl.ExtCtrls, //
   Vcl.stdctrls; //
 
@@ -95,7 +96,8 @@ procedure TForm1.FormCreate(Sender: TObject);
 var
   list: TList<String>;
 begin
-  Controller1 := PhisicsController.create; {Controller1 := PhisicsControllerLogging.create;}
+  //Controller1 := PhisicsController.create; {Controller1 := PhisicsControllerLogging.create;}
+  Controller1 := PhisicsControllerException.create;   {Controller1 := PhisicsControllerLogging.create;}
   list := TList<String>.create;
   list := Controller1.getMenu;
   // createPanels(Controller1.getMenu);

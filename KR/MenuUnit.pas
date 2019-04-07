@@ -3,9 +3,9 @@ unit MenuUnit;
 interface
 
 uses
-  AccessAdapterUnit,
+  //AccessAdapterUnit,
   AdaptersUnit,
-  System.Generics.Collections,
+  System.Generics.Collections,AccessAdapterLoggingUnit,
   MainUnit;
 
 type
@@ -22,7 +22,7 @@ implementation
 function Menu.getMenu: TList<string>;
 begin
   result := TList<string>.create;
-  Adapter1 := AccessAdapter.create;
+  Adapter1:=AccessAdapterLogging.Create;
   result := Adapter1.getMenu;
 end;
 
